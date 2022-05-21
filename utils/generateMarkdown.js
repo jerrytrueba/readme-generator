@@ -1,16 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(data) {
-    const licenseType = data.license[0];
-    let licenseString = " "
-    if (licenseType === "MIT") {
-        licenseString = '![License: MIT] (https://img.shields.io/badge/badge-license-green.svg)'
-    };
-    if (licenseType === "Apache") {
-        licenseString = '![License: Apache] (https://img.shields.io/badge/badge-license-blue.svg)'
-    };
-    return licenseString
-};
+function renderLicenseBadge(license){};
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -41,7 +31,6 @@ ${data.contributing}
 ${data.tests}
 
 ## License
-${renderLicenseBadge(data)}
 
 ## Questions
 ${data.questions}
