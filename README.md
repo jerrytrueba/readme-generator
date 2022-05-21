@@ -25,7 +25,6 @@ Any pull requests are welcomed.
 If tests are needed, please make sure to make the appropriate updates.
 
 ## License
-![License: MIT] (https://img.shields.io/badge/badge-license-green.svg)
 
 ## Questions
 For any questions, please feel free to email me at jerrytrueba10@gmail.com
