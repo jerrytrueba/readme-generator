@@ -4,10 +4,10 @@ function renderLicenseBadge(data) {
     const licenseType = data.license[0];
     let licenseString = " "
     if (licenseType === "MIT") {
-        licenseString = '![License: MIT (https://img.shields.io/badge/badge-license-green)'
+        licenseString = '![License: MIT] (https://img.shields.io/badge/badge-license-green.svg)'
     };
     if (licenseType === "Apache") {
-        licenseString = '![License: Apache (https://img.shields.io/badge/badge-license-blue)'
+        licenseString = '![License: Apache] (https://img.shields.io/badge/badge-license-blue.svg)'
     };
     return licenseString
 };
