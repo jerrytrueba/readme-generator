@@ -20,7 +20,7 @@ function init() {
             {
                 type: 'input',
                 name: 'installation',
-                message: 'Please describe the installation process if applicable.',
+                message: 'Any installations required?.',
             },
             {
                 type: 'input',
