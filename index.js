@@ -1,13 +1,58 @@
-// TODO: Include packages needed for this application
+function init() {
 
-// TODO: Create an array of questions for user input
-const questions = [];
+    const fs = require('fs');
+    const inquirer = require('inquirer');
+    const generate = require('./utils/generateMarkdown.js');
+    const path = require('path');
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+    inquirer
+        .prompt([
+            {
+                type: 'input',
+                name: 'title',
+                message: 'What is the name of your project?',
+            },
+            {
+                type: 'input',
+                name: 'description',
+                message: 'Please write a brief description of your project.',
+            },
+            {
+                type: 'input',
+                name: 'installation',
+                message: 'Please describe the installation process if applicable.',
+            },
+            {
+                type: 'input',
+                name: 'usage',
+                message: 'What will this project be used for?',
+            },
+            {
+                type: 'checkbox',
+                name: 'license',
+                choices: ["MIT", "Apache"],
+                message: 'Please select the appropriate license for the project.',
+            },
+            {
+                type: 'input',
+                name: 'contributing',
+                message: 'List out those who are contributing, if any.',
+            },
+            {
+                type: 'input',
+                name: 'tests',
+                message: 'Is a test included in this project?',
+            },
+            {
+                type: 'input',
+                name: 'questions',
+                message: 'Who can I contact in case of any issues?',
+            },
+        ])
 
-// TODO: Create a function to initialize app
-function init() {}
+        .then((response) => {
+            return fs.writeFileSync(path.join(process.cwd(), "readme-generator"), generate(response));
+        });
+}
 
-// Function call to initialize app
 init();

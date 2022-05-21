@@ -1,14 +1,22 @@
 {
-    "name": "static-site",
+    "name": "readme-generator",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:jerrytrueba/readme-generator.git"
+    },
+    "keywords": [],
     "author": "",
     "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jerrytrueba/readme-generator/issues"
+    },
     "dependencies": {
-        "inquirer": "^6.3.1"
+        "inquirer": "^6.5.2"
     }
 }
