@@ -27,4 +27,4 @@ If tests are needed, please make sure to make the appropriate updates.
 ## License
 
 ## Questions
-For any questions, please feel free to email me at jerrytrueba10@gmail.com
+For any questions, please feel free to email me at jerrytrueba10@gmail.com or watch my Youtube video here 
