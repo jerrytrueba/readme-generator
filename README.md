@@ -25,6 +25,7 @@ Any pull requests are welcomed.
 If tests are needed, please make sure to make the appropriate updates.
 
 ## License
+--Could not get the License Icons to work--
 
 ## Questions
 For any questions, please feel free to email me at jerrytrueba10@gmail.com or watch my Youtube video here https://youtu.be/wFxrkSdctDE
